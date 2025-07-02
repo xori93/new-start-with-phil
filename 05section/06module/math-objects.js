@@ -47,3 +47,36 @@ console.log(Math.random()); // e.g., 0.123456789
 
 //Math.pow() returns the base to the exponent power, that is, base^exponent
 console.log(Math.pow(2, 3)); // 8 (2^3)
+console.log(Math.pow(3, 2)); // 9 (3^2)
+
+
+console.log(2**3); // 8 (2^3) - ES6 exponentiation operator
+console.log(3**2); // 9 (3^2) - ES6 exponentiation operator
+
+//Math.sqrt() returns the square root of a number
+console.log(Math.sqrt(16)); // 4
+console.log(Math.sqrt(25)); // 5
+
+//check if a number is NaN (Not a Number)
+console.log(isNaN("Hello")); // true
+
+//check id a number is perfect square
+const num = 16;
+if(Math.sqrt(num) % 1 === 0) {
+    console.log(`${num} is a perfect square`);
+} else {
+    console.log(`${num} is not a perfect square`);
+}
+
+console.log("function to see if perfect square")
+
+function isPerfectSquare(num) {
+    if(Math.sqrt(num) % 1 === 0) {
+        return true
+    } else {
+        return false
+    } 
+}
+
+console.log(isPerfectSquare(16)); // true
+console.log(isPerfectSquare(20)); // false

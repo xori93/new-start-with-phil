@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Todo list</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    #taskList {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .task {
+      cursor: pointer;
+      padding: 8px;
+      background: #f0f0f0;
+      margin: 5px 0;
+      border-radius: 5px;
+    }
+
+    .task:hover {
+      background: #e0e0e0;
+    }
+    </style>
+</head>
+<body>
+  <h1>Todo List</h1>
+  <input type="text" id="taskInput" placeholder="Add a new task">
+  <button onclick="addTask">Add Task</button>
+  <ul id="taskList"></ul>
+
+  <script src="project.js"></script>
+</body>
+</html>

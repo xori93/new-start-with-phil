@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom example</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+      color: black;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="main-heading">Welcoms to JavaScript</h1>
+  <p class="description">This is a paragraph1</p>
+  <p class="description">This is a paragraph2</p>
+  <p class="description">This is a paragraph3</p>
+  <button">Click me</button>
+
+  <script>
+    function changeText() {
+      // Change the text of the main heading
+      document.getElementById('main-heading').textContent = 'DOM Manipulation is Awesome!';
+    }
+
+      // Change the text of the paragraph
+      // const paragraph = document.querySelector('.description');
+      // paragraph.innerText = 'This paragraph has been changed by JavaScript!';
+
+      // const paragraphs =document.getElementsByClassName('description');
+      // console.log("paragraphs[0].textContent =", paragraphs[0].textContent);
+
+      // const buttons = document.getElementsByTagName('button');
+      // console.log("buttons[0].textContent =", buttons[0].textContent);
+
+      // const firstParagraph = document.querySelector('.description');
+      // console.log("firstParagraph.textContent =", firstParagraph.textContent);
+
+      // const allParagraphs = document.querySelectorAll('.description');
+      // console.log("allParagraphs[0].textContent =", allParagraphs[0].textContent);
+
+
+      // Modify elements
+      // const heading = documentgetElementById('main-heading');
+      // heading.textContent = 'NEW HEADING';
+
+      // heading.innerHTML = '<span style="color: red;">header</span>heading';
+
+      // heading.style.color = 'blue';
+
+
+      // ADDING AND REMOVING AND CREATING
+      // const newParapraph = document.createElement("p");
+      // p.textContent = "This is a new paragraph created by JavaScript!";
+      // document.body.appendChild(newParapraph);
+
+      // 
+
+
+
+      // const heading = document.getElementById('main-heading');
+      // heading.classList.add("highlight");
+
+      // document.querySelector("button").addEventListener("click", function () {
+      // //   document.body.removeChild(newParapraph);
+      // heading.classList.remove("highlight");
+      // })
+
+
+      // const link = document.createElement("a");
+      // link.setAttribute("href", "https://www.google.com");
+      // link.setAttribute("target", "_blank");
+      // link.textContent = "Visit website";
+      // document.body.appendChild(link);
+  </script>
+</body>
+</html>
